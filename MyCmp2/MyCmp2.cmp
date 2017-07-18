@@ -1,0 +1,24 @@
+<aura:component >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    <aura:attribute name="accountList" type="Object"/>
+    
+    
+    
+    <header class="header">My Component-2</header>
+    
+    <div class="slds-modal__container">
+        
+        <ui:inputText aura:id="name" label="Enter Name" class="slds-input" />  
+        <div class="break"/>
+        <lightning:button label="Send The Name" onclick="{!c.nameAction}" variant="brand"/>
+        
+        <div class="break"/><div class="break"/>
+        
+        <aura:iteration items="{!v.accountList}" var="account" indexVar="i">
+            <c:DataTileCmp record="{!account}" recordKeyList="['Name','Occupation','Job Description']" index="{!i}" markUnMark="{!c.getDetails}"/>
+        </aura:iteration>
+        
+    </div>
+    
+</aura:component>

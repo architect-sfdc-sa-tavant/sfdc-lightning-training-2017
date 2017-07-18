@@ -1,0 +1,15 @@
+<aura:component >
+    
+    
+    <header class="header">My Component-1</header>
+    
+    <div class="slds-modal__container">
+        
+        <ui:inputText aura:id="name" label="Enter Name" blur="{!c.validate}" class="slds-input" />  
+        <div class="break"/>
+        <lightning:button label="Send The Name" onclick="{!c.nameAction}" variant="brand"/>
+        
+        
+    </div>
+    
+</aura:component>

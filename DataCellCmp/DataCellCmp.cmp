@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="fieldName" type="String" />
+    <aura:attribute name="output" type="String" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    {!v.output}
+</aura:component>

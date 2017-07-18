@@ -1,0 +1,36 @@
+<aura:component >
+    
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="recordKeyList" type="string[]" default="['Name','Title','Job Description']"/>
+    <aura:attribute name="index" type="Integer"/>
+    <aura:registerEvent name="markUnMark" type="c:DataTileSelectEvt"/>
+    
+    <div class="slds-tile slds-media border">
+        <div class="slds-media__figure">
+            <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                <img alt="" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" title="Lexee L. Jackson avatar"/>
+            </span>
+        </div>
+        <div class="slds-media__body">
+            <h3 class="slds-truncate" title="Lexee L. Jackson"><a href="javascript:void(0);">Lexee L. Jackson</a></h3>
+            <div class="slds-tile__detail slds-text-body_small">
+                <table>
+                    <aura:iteration items="{!v.recordKeyList}" var="key">
+                        <tr class="data">
+                            <td class="key">{!key}</td>
+                            <td class="value"><c:DataCellCmp record="{!v.record}" fieldName="{!key}"/></td>
+                        </tr>
+                    </aura:iteration>
+                </table>
+            </div>
+        </div>
+        
+        <span class="slds-checkbox">
+            <label class="slds-checkbox__label">
+                <ui:inputCheckbox class="slds-checkbox" change="{!c.markUnMark}"/>
+                <span class="slds-checkbox_faux"></span>
+            </label >
+        </span>
+        
+    </div>
+</aura:component>
