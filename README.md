@@ -1,4 +1,4 @@
-# sfdc-lightning-training-2017
+a # sfdc-lightning-training-2017
 The repository is for SALESFORCE LIGHTNING Training purpose
 We've created two apps for now, but have planned for five apps- >
  
@@ -12,7 +12,7 @@ Contact or any custom object picklist using account picklist.
  
                 P.S. - I’ve used SLDS  + custom css in my second app.
 
-Building simple use cases on SALESFORCE LIGHTNING to allow for the INTERNAL training on SALESFORCE LIGHTNING, tentatively planned to start in the last week of this month.
+Building a simple use cases on SALESFORCE LIGHTNING to allow for the INTERNAL training on SALESFORCE LIGHTNING, tentatively planned to start in the last week of this month.
  
 1.	A simple DATA ENTRY Screen allowing for pulling and showing the data against Standard vs Custom Objects, incorporate CLIENT SIDE VALIDATIONS using any JQUERY Frameworks, ANGULAR, BOOTSRAP, Implementing Forms, Validating Input Data.
 2.	Parent Child Relationship to be show cased in lieu of Standard vs Custom Objects.
